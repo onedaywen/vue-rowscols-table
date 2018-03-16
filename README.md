@@ -1,39 +1,38 @@
 ## install
 ```
-git clone https://github.com/onedaywen/month_picker.git
-cd month_picker
+git clone https://github.com/onedaywen/vue-rowscols-table.git
+cd vue-rowscols-table
 npm i
 npm run dev
 ```
 ## Tutorial
 
 ```
-import MonthPicker from 'src/components/month_picker/index.vue';
+import rowscolsTable from 'src/components/rowscols_table/index.vue';
 
 //vue components
 ...
 data: {
-  param: {
-    year: '',
-    month: '',
-    limitStart: '',//'2010-10',
-    limitEnd: '',//'2020-3',
+  rowscolsTable: {
+    titleArr: [
+      ...
+      String | Object,
+      ...
+    ],
+    contentArr: [
+      //tr contentArr的内层数组每一个对象都是一个tr数组
+      [
+        
+      ]
+    ]
   }
 },
 components: {
-  MonthPicker
+  rowscolsTable
 },
-methods: {
-  callback (param) {
-    console.log('a callback when you pick a month', param);
-  }
-}
 ...
 
 //in vue template
-<MonthPicker :param="param" :callback="callback">
+<rowscolsTable :param="param">
 
 ```
-## views
-![](https://github.com/onedaywen/month_picker/blob/master/src/components/month_picker/img/one.png)
-![](https://github.com/onedaywen/month_picker/blob/master/src/components/month_picker/img/two.png)
