@@ -36,3 +36,5 @@ components: {
 <rowscolsTable :param="param">
 
 ```
+## views
+![](https://github.com/onedaywen/vue-rowscols-table/blob/master/src/components/rowscols_table/1.png)
